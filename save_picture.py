@@ -55,7 +55,6 @@ def main():
                 break
             elif key == ord('s'):
                 now = datetime.datetime.now()
-                # cv2.imwrite('20201223kenshou/' + now.strftime('%Y%m%d_%H%M%S') + '_frame.jpg', color_image_s)
                 cv2.imwrite(now.strftime('%Y%m%d_%H%M%S') + '.jpg', color_image_s)
                 print("save", count)
                 count += 1
